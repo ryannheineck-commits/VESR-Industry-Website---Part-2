@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Personal Values</title>
+
+  <style>
+    :root {
+      --page-bg: #e9eef6;
+      --panel-bg: #ffffff;
+      --title-band: #123159;
+      --text-color: #0f172a;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Roboto, Arial, sans-serif;
+      background: var(--page-bg);
+      color: var(--text-color);
+      line-height: 1.5;
+    }
+
+    header {
+      background: var(--title-band);
+      padding: 24px 16px;
+      text-align: center;
+    }
+
+    /* Title is big and bold */
+    h1 {
+      margin: 0;
+      font-size: 2.2rem;
+      color: white;
+      font-weight: 800;
+      letter-spacing: 0.4px;
+    }
+
+    main {
+      max-width: 920px;
+      margin: 20px auto;
+      padding: 0 16px 40px;
+    }
+
+    .panel {
+      background: var(--panel-bg);
+      border-radius: 6px;
+      padding: 24px;
+      box-shadow: 0 6px 18px rgba(7, 15, 31, 0.06);
+      border: 1px solid rgba(16, 24, 40, 0.03);
+    }
+
+    /* image style */
+    .hero {
+      display: block;
+      max-width: 480px;
+      width: 100%;
+      height: auto;
+      margin: 14px auto;
+      border-radius: 6px;
+      box-shadow: 0 6px 18px rgba(2, 6, 23, 0.06);
+    }
+
+    /* section headings and text */
+    h2 {
+      margin: 18px 0 8px 0;
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--text-color);
+    }
+
+    p {
+      margin: 6px 0 10px 0;
+      font-size: 0.95rem;
+      color: var(--text-color);
+    }
+
+    .value-title {
+      font-weight: 700;
+      color: var(--text-color);
+      margin-bottom: 8px;
+      display: block;
+    }
+
+    ol {
+      margin: 8px 0 0 18px;
+      padding: 0;
+      color: var(--text-color);
+    }
+
+    ol li {
+      margin: 6px 0;
+    }
+
+    .meta {
+      color: var(--text-color);
+      font-size: 0.95rem;
+      margin-top: 6px;
+    }
+
+    footer {
+      text-align: center;
+      padding: 14px;
+      margin-top: 20px;
+      background: var(--panel-bg);
+      color: var(--text-color);
+      font-size: 0.95rem;
+      border-top: 1px solid rgba(16, 24, 40, 0.03);
+    }
+
+    @media (max-width: 560px) {
+      h1 { font-size: 1.6rem; }
+      .panel { padding: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Core Values</h1>
+  </header>
+
+  <main>
+    <div class="panel">
+      <img
+        src="values-image.png"
+        alt="image representing values"
+        class="hero"
+        onerror="this.style.display='none'"
+      />
+
+      <h2 style="text-align:center; margin-top:6px;">About these values</h2>
+      <p style="text-align:center;">
+        Here are my four main values. For each one I say what it means, where it comes from, why it matters, and what might happen if I do not stick to it.
+      </p>
+
+      <!-- Ambition -->
+      <section id="ambition" style="margin-top:14px;">
+        <span class="value-title">Ambition</span>
+        <ol>
+          <li><strong>What it means</strong> I believe you must believe in yourself and set goals to make them happen.</li>
+          <li class="meta"><strong>Where it comes from</strong> Seeing people I admire aim high and reach their goals showed me how far ambition can take you.</li>
+          <li class="meta"><strong>Why it matters</strong> Ambition gives me focus and the push to keep going when things get hard.</li>
+          <li class="meta"><strong>Ramifications</strong> Without ambition you might drift and miss chances to grow and succeed.</li>
+        </ol>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" style="margin-top:14px;">
+        <span class="value-title">Experience</span>
+        <ol>
+          <li><strong>What it means</strong> I think the more time and effort you put into something the more you get out of it.</li>
+          <li class="meta"><strong>Where it comes from</strong> Doing long projects and practice taught me that steady work builds skill.</li>
+          <li class="meta"><strong>Why it matters</strong> Experience helps me make better choices and do work I can be proud of.</li>
+          <li class="meta"><strong>Ramifications</strong> Skipping the work leads to shallow results and repeated mistakes.</li>
+        </ol>
+      </section>
+
+      <!-- Independence -->
+      <section id="independence" style="margin-top:14px;">
+        <span class="value-title">Independence</span>
+        <ol>
+          <li><strong>What it means</strong> I want to be able to take care of myself and not rely on others to get by.</li>
+          <li class="meta"><strong>Where it comes from</strong> Watching family and learning to solve problems on my own showed me why independence matters.</li>
+          <li class="meta"><strong>Why it matters</strong> Being independent lets me make my own choices and handle changes with more confidence.</li>
+          <li class="meta"><strong>Ramifications</strong> Depending on others too much can limit freedom and slow down personal growth.</li>
+        </ol>
+      </section>
+
+      <!-- Originality -->
+      <section id="originality" style="margin-top:14px;">
+        <span class="value-title">Originality</span>
+        <ol>
+          <li><strong>What it means</strong> I value doing what I want with my life and not listening to people who are negative.</li>
+          <li class="meta"><strong>Where it comes from</strong> Creative projects and advice to follow my own path taught me to trust my ideas.</li>
+          <li class="meta"><strong>Why it matters</strong> Original choices keep my work real and keep me excited to learn and make things.</li>
+          <li class="meta"><strong>Ramifications</strong> If you follow only what others say you can lose passion and regret missed chances.</li>
+        </ol>
+      </section>
+
+      <section style="margin-top:18px;">
+        <h2>Short reflection</h2>
+        <p class="meta">
+          I work on these values by setting goals, practicing regularly, solving problems on my own and following projects that feel right for me.
+        </p>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div>© 2026 Your Name</div>
+  </footer>
+</body>
+</html>
